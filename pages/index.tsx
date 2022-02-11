@@ -24,7 +24,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      title: titles[0],
+      title: titles[0] + new Date().toISOString(),
       revalidate: 60,
     },
   };
