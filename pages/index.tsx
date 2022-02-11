@@ -29,8 +29,8 @@ export async function getStaticProps() {
     props: {
       title: titles[0],
       now,
-      revalidate: 60,
     },
+    revalidate: 60,
   };
 }
 
